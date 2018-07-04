@@ -4,7 +4,7 @@ cd $(cd $(dirname $0); pwd)
 memory_free=`awk '/^Mem/ {print $4}' <(free -m)`
 
 if [ "$memory_free" -le 60 ]; then
-	echo -e "\x1B[31m¦\n¦ CAUTION:\x1B[01;91m Your RAM size is less than 60MB.\n¦ NOW you can not install the SOURCE TH3BOSS. \n¦"
+	echo -e "\x1B[31m¦\n¦ CAUTION:\x1B[01;91m Your RAM size is less than 60MB.\n¦ NOW you can not install the SOURCE MEXIC0. \n¦"
 	echo -e "\x1B[01;90m¦ YOUR RAM FREE SIZE IS : \x1B[01;94m "$memory_free"MB\x1B[0m"
 	exit 1
 fi
@@ -27,7 +27,7 @@ echo -e "\x1B[01;90m\n¦ upgrade ...\n \x1B[0m"
 sudo apt-get upgrade -y
 echo -e "\x1B[01;90m\n¦ dist-upgrade ... \n\x1B[0m"
 sudo apt-get dist-upgrade -y
-# BY _ [ OMAR ALSARY >> @BLCON | MOHAMED HISHAM >> @TH3BOSS ]
+# BY _ [ ZAHAYMR >> @ZAHAYMR | AMEYR ALI >> @VI_P2 ]
 echo -e "\x1B[01;90m\n¦ Download luarocks v2.4.3 ... \n\x1B[0m"
  wget https://luarocks.org/releases/luarocks-2.4.3.tar.gz
  tar zxpf luarocks-2.4.3.tar.gz
